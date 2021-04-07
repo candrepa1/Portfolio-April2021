@@ -47,6 +47,8 @@ const Grid = () => {
 				description="Consumed a trivia API and implemented Object-Oriented Programming principles 🎲 Pick the category, number of questions, and level of difficulty and answer away! Made using Vanilla JavaScript and styled with Bootstrap."
 				// bg="#A07855FF"
 				bg="#5B84B1FF"
+				live="https://camilas-oop-api.netlify.app"
+				repo="https://github.com/candrepa1/Trivia-API-OOP"
 			/>
 		</GridContainer>
 	);
