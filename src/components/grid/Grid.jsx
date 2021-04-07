@@ -35,7 +35,7 @@ const Grid = () => {
 			<Card
 				title="LIVE CHAT"
 				img={Chat}
-				description="Made with Socket.io, React, Redux and Redux-Thunk. Log in or sign up and chat in real time with other people in the same room 💬 In case you want to login directly: "
+				description="Made with Socket.io, React, Redux and Redux-Thunk. Styled with Material UI. Log in or sign up and chat in real time with other people in the same room 💬 In case you want to login directly: "
 				extra="Email: user@user.com - Password: random123"
 				repo="https://github.com/candrepa1/chatDraft"
 				live="https://chat-socketio-devsquad.netlify.app"
