@@ -24,7 +24,7 @@ const Card = ({ title, img, description, repo, live, extra, bg }) => {
 				</CodeBarCircleContainer>
 				<Title>{title}</Title>
 			</CodeBar>
-			<Img src={img} alt={title} />
+			<Img src={img} alt={title} loading="lazy" />
 			<Overlay>
 				<Button href={repo} rel="noopener noreferrer nofollow" target="_blank">
 					CODE
