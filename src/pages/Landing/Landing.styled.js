@@ -4,7 +4,6 @@ import { breakpoints } from "../../styles/breakpoints";
 export const TopBackground = styled.div`
 	@media only screen and ${breakpoints.xs} {
 		position: absolute;
-		height: 100%;
 	}
 	@media only screen and ${breakpoints.sm} {
 		top: 50%;
@@ -20,6 +19,7 @@ export const Main = styled.div`
 	align-items: center;
 	text-align: center;
 	padding: 10px;
+	height: 100%;
 `;
 
 export const Name = styled.h1`
