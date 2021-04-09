@@ -1,23 +1,9 @@
 import React from "react";
+import { GridContainer } from "./Grid.styled";
 import Card from "../card/Card";
-import styled from "styled-components";
 import Poke from "../../img/poke.png";
 import Chat from "../../img/chat.png";
 import Trivia from "../../img/trivia.png";
-
-const GridContainer = styled.div`
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-template-columns: 1fr 1fr;
-	gap: 50px;
-	overflow-y: auto;
-	padding: 50px;
-	&:after {
-		grid-column: span 2;
-		height: 10px;
-		content: "";
-	}
-`;
 
 const Grid = () => {
 	return (

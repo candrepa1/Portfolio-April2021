@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "./breakpoints";
 
 export const Container = styled.div`
 	height: 100vh;
@@ -11,11 +12,20 @@ export const Container = styled.div`
 `;
 
 export const MainGridContainer = styled.div`
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 15% 85%;
-	height: 100vh;
-	background: #151819;
-	color: white;
-	font-family: "Poppins", sans-serif;
+	@media only screen and ${breakpoints.xs} {
+		background: #151819;
+		color: white;
+		font-family: "Poppins", sans-serif;
+		padding: 25px;
+	}
+
+	@media only screen and ${breakpoints.sm} {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 15% 85%;
+		height: 100vh;
+		background: #151819;
+		color: white;
+		font-family: "Poppins", sans-serif;
+	}
 `;

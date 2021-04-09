@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/breakpoints";
 
 export const Overlay = styled.span`
 	background: rgba(29, 45, 80, 0.3);
@@ -16,24 +17,30 @@ export const Overlay = styled.span`
 
 export const CardContainer = styled.div`
 	/* box-shadow: 10px 10px #2a2a2a; */
-	display: flex;
-	flex-direction: column;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: transform;
-	transition-property: transform;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-	&:hover,
-	&:focus,
-	&:active {
-		-webkit-transform: translateY(-8px);
-		transform: translateY(-8px);
-	}
-	&:hover ${Overlay} {
+	@media only screen and ${breakpoints.xs} {
+		margin-bottom: 20px;
 		display: flex;
+		flex-direction: column;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+		&:hover,
+		&:focus,
+		&:active {
+			-webkit-transform: translateY(-8px);
+			transform: translateY(-8px);
+		}
+		&:hover ${Overlay} {
+			display: flex;
+		}
+	}
+	@media only screen and ${breakpoints.sm} {
+		margin-bottom: 0;
 	}
 `;
 
@@ -53,11 +60,16 @@ export const CodeBarCircle = styled.div`
 `;
 
 export const Title = styled.h3`
-	color: #8a8a8a;
-	margin: 0;
-	font-size: 15px;
-	text-align: center;
-	margin-right: 45%;
+	@media only screen and ${breakpoints.xs} {
+		color: #8a8a8a;
+		margin: 0;
+		font-size: 15px;
+		text-align: center;
+		margin-right: 35%;
+	}
+	@media only screen and ${breakpoints.sm} {
+		margin-right: 45%;
+	}
 `;
 
 export const CodeBarCircleContainer = styled.div`

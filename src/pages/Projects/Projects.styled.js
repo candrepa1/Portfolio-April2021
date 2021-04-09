@@ -1,6 +1,12 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/breakpoints";
 
 export const Title = styled.h1`
-	text-align: center;
-	margin: auto 0;
+	@media only screen and ${breakpoints.xs} {
+		text-align: center;
+		margin-top: 0;
+	}
+	@media only screen and ${breakpoints.sm} {
+		margin: auto 0;
+	}
 `;
