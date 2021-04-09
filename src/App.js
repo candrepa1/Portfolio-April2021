@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Landing from "./components/Landing/Landing";
+import Landing from "./pages/Landing/Landing";
 import Projects from "./pages/Projects/Projects";
 
 function App() {
