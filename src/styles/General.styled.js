@@ -2,13 +2,16 @@ import styled from "styled-components";
 import { breakpoints } from "./breakpoints";
 
 export const Container = styled.div`
-	height: 100vh;
-	background: #151819;
-	color: white;
-	display: flex;
-	align-items: center;
-	font-family: "Poppins", sans-serif;
-	box-sizing: border-box;
+	@media only screen and ${breakpoints.xs} {
+		overflow: hidden;
+		height: 100vh;
+		background: #151819;
+		color: white;
+		display: flex;
+		align-items: center;
+		font-family: "Poppins", sans-serif;
+		box-sizing: border-box;
+	}
 `;
 
 export const MainGridContainer = styled.div`
