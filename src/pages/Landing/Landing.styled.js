@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/breakpoints";
 
 export const TopBackground = styled.div`
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	@media only screen and ${breakpoints.xs} {
+		position: absolute;
+	}
+	@media only screen and ${breakpoints.sm} {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 `;
 
 export const Main = styled.div`
@@ -12,17 +17,28 @@ export const Main = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	padding: 10px;
 `;
 
 export const Name = styled.h1`
-	margin: 0;
-	font-size: 40px;
+	@media only screen and ${breakpoints.xs} {
+		margin: 0;
+		font-size: 24px;
+	}
+	@media only screen and ${breakpoints.sm} {
+		font-size: 40px;
+	}
 `;
 
 export const Description = styled.h3`
-	font-size: 23px;
-	text-align: center;
-	font-weight: 400;
+	@media only screen and ${breakpoints.xs} {
+		font-size: 19px;
+		font-weight: 400;
+	}
+	@media only screen and ${breakpoints.sm} {
+		font-size: 23px;
+	}
 `;
 
 export const ButtonsContainer = styled.div`
